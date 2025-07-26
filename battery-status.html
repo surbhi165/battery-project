@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Battery Request Status</title>
+  <link rel="stylesheet" href="battery-status.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🔋 Battery Status Checker</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="battery-request.html">Request Battery</a></li>
+        <li><a href="battery-status.html">Check Status</a></li>
+
+        <li><a href="vendor-register.html">Vendor Register</a></li>
+        <li><a href="orders-status.html">Track Orders</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="status-section">
+    <h2>Track Your Battery Request</h2>
+    <p>Enter your phone number to view current request status.</p>
+
+    <input type="tel" id="phone" placeholder="📱 Enter Phone Number" />
+    <button onclick="showStatus()">Check Status</button>
+
+    <div id="result" class="result-box" style="display: none;"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Battery Delivery | Powered by Surbhi</p>
+  </footer>
+
+  <script src="battery-status.js"></script>
+</body>
+</html>
