@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vendor Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🔧 Register as Vendor</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="battery-request.html">Request Battery</a></li>
+        <li><a href="vendor-register.html">Vendor Register</a></li>
+        <li><a href="battery-status.html">Check Status</a></li>
+        <li><a href="order-status.html">Track Order</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-section">
+    <h2>📋 Vendor Registration Form</h2>
+    <p>Fill in your details to become a listed battery vendor on our platform.</p>
+
+    <form class="battery-form" onsubmit="handleVendorSubmit(event)">
+      <label for="vendorName">🏪 Vendor Name:</label>
+      <input type="text" id="vendorName" name="vendorName" required />
+
+      <label for="contact">📞 Phone Number:</label>
+      <input type="tel" id="contact" name="contact" required />
+
+      <label for="email">📧 Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="location">📍 Pin Code:</label>
+      <input type="text" id="location" name="location" maxlength="6" required />
+
+      <label for="batteries">🔋 Battery Types (e.g., 36V E-bike, 48V E-rickshaw):</label>
+      <textarea id="batteries" name="batteries" rows="4"></textarea>
+
+      <button type="submit" class="btn">Register Vendor</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Battery Delivery | Powered by Surbhi</p>
+  </footer>
+
+  <script>
+    function handleVendorSubmit(event) {
+      event.preventDefault();
+      alert("✅ Vendor registered successfully!");
+      document.querySelector(".battery-form").reset();
+    }
+  </script>
+</body>
+</html>

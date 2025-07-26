@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Track Battery Order</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📦 Track Your Battery Order</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="battery-request.html">Request Battery</a></li>
+        <li><a href="vendor-register.html">Vendor Register</a></li>
+        <li><a href="battery-status.html">Check Status</a></li>
+        <li><a href="orders-status.html">Track Order</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-section">
+    <h2>🔍 Enter Your Details</h2>
+    <p>Enter your phone number or order ID to track your battery delivery status.</p>
+
+    <form class="battery-form" onsubmit="handleTrack(event)">
+      <label for="tracking">📱 Phone / Order ID:</label>
+      <input type="text" id="tracking" required placeholder="e.g. 9876543210 or ORD12345" />
+
+      <button type="submit" class="btn">Track Order</button>
+    </form>
+
+    <div id="result" style="margin-top: 25px; font-size: 18px;"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Battery Delivery | Powered by Surbhi</p>
+  </footer>
+
+  <script>
+    function handleTrack(event) {
+      event.preventDefault();
+      const trackInput = document.getElementById("tracking").value.trim();
+      const resultBox = document.getElementById("result");
+
+      if (trackInput === "") {
+        resultBox.innerHTML = "❌ Please enter a valid tracking ID.";
+        return;
+      }
+
+      // Dummy response
+      resultBox.innerHTML = `
+        ✅ Order ID: ${trackInput} <br>
+        🚚 Status: Out for Delivery <br>
+        📍 Last Location: Near your area <br>
+        ⏱️ ETA: 30 minutes
+      `;
+    }
+  </script>
+</body>
+</html>

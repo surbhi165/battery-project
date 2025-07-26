@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Battery Delivery And Its Recovery System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Let's Start our Planning for This System</h1>
+    <p> Requirements for this>></p>
+     <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="battery-request.html">Request Battery</a></li>
+
+        <li><a href="vendor-register.html">Vendor Register</a></li>
+        <li><a href="orders-status.html">Track Order</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>🔍 Problem Statements is .....</h2>
+    <p>As we know in this time many vechiles (like e-bikes and e-rickshaws) are operated with battery.Sometimes they faces issues when Batter sudden down And specially 
+          in rural areas face difficulty in getting timely battery replacements. Our platform aims to solve this by connecting users with nearby battery vendors.</p>
+
+
+    <section class="Target">
+        <h2>👥 Target Users</h2>
+        <ul>
+      <li>Electric vehicle owners (e-bikes, e-rickshaws, scooters)</li>
+      <li>Battery vendors and dealers</li>
+      <li>Delivery agents (optional in future)</li>
+      <li>System admin (future scope)</li>
+    </ul>
+    </section>
+   
+
+    <section class="features">
+    <h2>🛠️ Core Features (Prototype)</h2>
+    <ul>
+      <li>Battery Request Form</li>
+      <li>Vendor Registration Page</li>
+      <li>Dummy Order Tracking</li>
+      <li>Clean, mobile-friendly UI</li>
+    </ul>
+    </section>
+
+    <section class="unique">
+    <h2>✨ Unique & Smart Features (Future Scope)</h2>
+    <ul>
+      <li>🔋 Battery Health Prediction based on usage</li>
+      <li>📍 Location-Based Vendor Matching using pin code</li>
+      <li>💰 Subscription Model for frequent users</li>
+      <li>🔔 WhatsApp/SMS Notification Simulation</li>
+      <li>📸 QR Code Scan / Image Upload for auto battery detection</li>
+    </ul>
+    </section>
+
+    <section class="benefits">
+    <h2>🎯 Why Use Our Platform?</h2>
+    <ul>
+        <li>⚡ Fast and reliable battery delivery at your doorstep</li>
+        <li>📍 Location-based vendor matching to reduce wait time</li>
+        <li>🔋 Accurate battery prediction to avoid sudden failures</li>
+        <li>💰 Subscription plans for regular users and fleets</li>
+        <li>🧾 Digital record for vendors to manage stock easily</li>
+    </ul>
+    </section>
+
+
+    <h2>💻 Platform</h2>
+    <p>This prototype is built using HTML, CSS, and JavaScript. Future enhancements can include Firebase or backend API integration.</p>
+
+    <a class="btn" href="battery-request.html">Start Prototype</a>
+
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+
+<div class="chatbot-container">
+  <div class="chatbot-header">🔧 Need Help?</div>
+  <div class="chatbot-body" id="chatBody">
+    <div class="bot-msg">Hi! How can I help you with your battery request?</div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="userInput" placeholder="Type your question..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+</html>
